@@ -99,8 +99,21 @@ main {
             max-width: 580px;
             border: 1px solid lightgrey;
             border-radius: 50px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            gap: 10px;
+            svg {
+                height: 20px;
+                width: 20px;
+                color: darkgray;
+            }
             input {
                 border: none;
+                flex: 1;
+            }
+            input:focus {
+                outline: none;
             }
         }
         .buttons {
