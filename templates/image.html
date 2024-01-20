@@ -2,30 +2,27 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <link rel="stylesheet" href="./static/style.css">
+        <link rel="stylesheet" href="../static/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <nav class="navbar">
             <ul>
-                <li><a href="./templates/image.html">Images</a></li>
+                <li><a href="../index.html">Search</a></li>
                 <li><a href="./advanced.html">Advanced</a></li>
             </ul>
         </nav>
         <main>
             <form action="https://www.google.com/search">
                 <h1 id="logo">
-                    <span>S</span><span>e</span><span>a</span><span>r</span><span>c</span><span>h</span>
+                    <span>I</span><span>m</span><span>a</span><span>g</span><span>e</span><span>s</span>
                 </h1>
                 <div class="search">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>                      
                     <input type="search" name="q">
-                </div>
-                <div class="buttons">
-                    <input type="submit" value="Google Search">
-                    <input type="submit" name="btnI" value="I'm Feeling Lucky">
+                    <input type="hidden" name="tbm" value="isch" />
                 </div>
             </form>
         </main>

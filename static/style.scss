@@ -79,12 +79,13 @@ a:hover {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex: 1;
     font-size: 14px;
     color: $black;
     form {
+        padding-top: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -130,7 +131,6 @@ main {
         }
         .buttons {
             margin-top: 20px;
-            padding-bottom: 180px;
             input {
                 background-color: $lightgrey;
                 border: 1px solid $lightgrey;
