@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Product Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
 }
 html {
@@ -69,23 +69,48 @@ main {
   align-items: center;
   flex: 1;
 }
-main .search-container {
-  border: 1px solid red;
+main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-main .search-container #logo {
+main form #logo {
+  font-weight: 700;
+  font-size: 100px;
   font-family: Product Sans, sans-serif;
 }
-main .search-container #logo :nth-child(1) {
+main form #logo :nth-child(1) {
   color: #4285F4;
 }
-main .search-container #logo :nth-child(2) {
+main form #logo :nth-child(2) {
   color: #EA4335;
 }
-main .search-container #logo :nth-child(2) {
+main form #logo :nth-child(3) {
+  color: #FBBC05;
+}
+main form #logo :nth-child(4) {
+  color: #4285F4;
+}
+main form #logo :nth-child(5) {
+  color: #34A853;
+}
+main form #logo :nth-child(6) {
   color: #EA4335;
+}
+main form .search {
+  height: 46px;
+  width: 90%;
+  max-width: 580px;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+}
+main form .search input {
+  border: none;
+}
+main form .buttons {
+  margin-top: 40px;
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

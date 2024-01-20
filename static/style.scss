@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   }
 
@@ -77,16 +77,35 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
-    .search-container {
-        border: 1px solid red;
+    form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         #logo {
+            font-weight: 700;
+            font-size: 100px;
             font-family: Product Sans, sans-serif;
-            :nth-child(1) { color: $blue; }
-            :nth-child(2) { color: $red; }
-            :nth-child(2) { color: $red; }
+            :nth-child(1) { color: $blue;}
+            :nth-child(2) { color: $red;}
+            :nth-child(3) { color: $yellow;}
+            :nth-child(4) { color: $blue;}
+            :nth-child(5) { color: $green;}
+            :nth-child(6) { color: $red;}
+        }
+        .search {
+            height: 46px;
+            width: 90%;
+            max-width: 580px;
+            border: 1px solid lightgrey;
+            border-radius: 50px;
+            input {
+                border: none;
+            }
+        }
+        .buttons {
+            margin-top: 40px;
+            padding-bottom: 100px;
         }
     }
 }
