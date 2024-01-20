@@ -38,15 +38,18 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
   }
 
 $black: #000000de;
-$blue : #4285F4;
-$red : #EA4335;
-$yellow : #FBBC05;
-$green : #34A853;
+$blue: #4285F4;
+$red: #EA4335;
+$yellow: #FBBC05;
+$green: #34A853;
+$lightgrey: #f8f9fa;
+$darkgrey: #3c4043;
+$footer: #f2f2f2;
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -61,14 +64,16 @@ html {
         padding: 20px;
         margin-right: 60px;
     }
-    .nav-item {
-        font-size: 14px;
-        text-decoration: none;
-        color: $black;
-    }
-    .nav-item:hover {
-        text-decoration: underline;
-    }
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: $black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -77,14 +82,16 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
+    font-size: 14px;
+    color: $black;
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         #logo {
-            font-weight: 700;
-            font-size: 100px;
+            font-weight: 900;
+            font-size: 90px;
             font-family: Product Sans, sans-serif;
             :nth-child(1) { color: $blue;}
             :nth-child(2) { color: $red;}
@@ -116,10 +123,41 @@ main {
                 outline: none;
             }
         }
+        .search:hover {
+            -webkit-box-shadow:0px 0px 10px 0px lightgrey;
+            -moz-box-shadow: 0px 0px 10px 0px lightgrey;
+            box-shadow: 0px 0px 10px 0px lightgrey;
+        }
         .buttons {
             margin-top: 40px;
-            padding-bottom: 100px;
+            padding-bottom: 200px;
+            input {
+                background-color: $lightgrey;
+                border: 1px solid $lightgrey;
+                border-radius: 4px;
+                color: $darkgrey;
+                font-family: Roboto,arial,sans-serif;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+            }
+            input:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                border: 1px solid #dadce0;
+            }
         }
     }
+}
+
+footer {
+    font-size: 14px;
+    color: $black;
+    text-align: center;
+    padding: 20px;
+    background-color: $footer;
 }
 

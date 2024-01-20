@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Product Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
 }
 html {
@@ -53,12 +53,14 @@ html {
   padding: 20px;
   margin-right: 60px;
 }
-.navbar .nav-item {
+
+a {
   font-size: 14px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8705882353);
 }
-.navbar .nav-item:hover {
+
+a:hover {
   text-decoration: underline;
 }
 
@@ -68,6 +70,8 @@ main {
   justify-content: center;
   align-items: center;
   flex: 1;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8705882353);
 }
 main form {
   display: flex;
@@ -76,8 +80,8 @@ main form {
   width: 100%;
 }
 main form #logo {
-  font-weight: 700;
-  font-size: 100px;
+  font-weight: 900;
+  font-size: 90px;
   font-family: Product Sans, sans-serif;
 }
 main form #logo :nth-child(1) {
@@ -121,9 +125,40 @@ main form .search input {
 main form .search input:focus {
   outline: none;
 }
+main form .search:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px lightgrey;
+  -moz-box-shadow: 0px 0px 10px 0px lightgrey;
+  box-shadow: 0px 0px 10px 0px lightgrey;
+}
 main form .buttons {
   margin-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+}
+main form .buttons input {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: Roboto, arial, sans-serif;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+main form .buttons input:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+
+footer {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8705882353);
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */
