@@ -1,0 +1,93 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+$black: #000000de;
+$blue : #4285F4;
+$red : #EA4335;
+$yellow : #FBBC05;
+$green : #34A853;
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        gap: 25px;
+        padding: 20px;
+        margin-right: 60px;
+    }
+    .nav-item {
+        font-size: 14px;
+        text-decoration: none;
+        color: $black;
+    }
+    .nav-item:hover {
+        text-decoration: underline;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    .search-container {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #logo {
+            font-family: Product Sans, sans-serif;
+            :nth-child(1) { color: $blue; }
+            :nth-child(2) { color: $red; }
+            :nth-child(2) { color: $red; }
+        }
+    }
+}
+
