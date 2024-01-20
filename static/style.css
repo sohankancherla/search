@@ -45,12 +45,45 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar ul {
+.navbar2 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.navbar2 > a {
+  font-family: Product Sans, sans-serif;
+  font-size: 20px;
+}
+.navbar2 > a :nth-child(1) {
+  color: #4285F4;
+}
+.navbar2 > a :nth-child(2) {
+  color: #EA4335;
+}
+.navbar2 > a :nth-child(3) {
+  color: #FBBC05;
+}
+.navbar2 > a :nth-child(4) {
+  color: #4285F4;
+}
+.navbar2 > a :nth-child(5) {
+  color: #34A853;
+}
+.navbar2 > a :nth-child(6) {
+  color: #EA4335;
+}
+.navbar2 > a:hover {
+  text-decoration: none;
+}
+
+nav {
+  padding: 20px;
+}
+nav ul {
   list-style: none;
   display: flex;
   justify-content: end;
   gap: 25px;
-  padding: 20px;
   margin-right: 60px;
 }
 

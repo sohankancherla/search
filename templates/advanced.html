@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar2">
+            <a href="../index.html"><span>S</span><span>e</span><span>a</span><span>r</span><span>c</span><span>h</span></a>
+            <ul>
+                <li><a href="../index.html">Search</a></li>
+                <li><a href="./image.html">Images</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Advanced Search</h1>
+            <h2>Find pages with...</h2>
+            <form action="https://www.google.com/search?as_q=dog&as_epq=cute+dog&as_oq=doodle++golden&as_eq=cat+buldog">
+                <div class="terms">
+                    <label for="word">all these words:</label>
+                    <input type="text" name="as_q">
+                </div>
+                <div class="terms">
+                    <label for="word">this exact word or phrase:</label>
+                    <input type="text" name="as_epq">
+                </div>
+                <div class="terms">
+                    <label for="word">any of these words:</label>
+                    <input type="text" name="as_oq">
+                </div>
+                <div class="terms">
+                    <label for="word">none of these words:</label>
+                    <input type="text" name="as_eq">
+                </div>
+                <input type="submit" value="Advanced Search">
+            </form>
+        </main>
+        <footer>
+            <span>Created by <a href="https://github.com/sohankancherla">Sohan Kancherla <i class="fa fa-github" style="font-size:14px"></i></a></span>
+        </footer>
+    </body>
+</html>
