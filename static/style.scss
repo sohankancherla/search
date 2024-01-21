@@ -50,6 +50,9 @@ $green: #34A853;
 $lightgrey: #f8f9fa;
 $darkgrey: #3c4043;
 $footer: #f2f2f2;
+$red-header: #d93025;
+$divider-color: #ebebeb;
+$display-black: #222222;
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +98,7 @@ a:hover {
     text-decoration: underline;
 }
 
-main {
+.search-page {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -103,7 +106,7 @@ main {
     flex: 1;
     font-size: 14px;
     color: $black;
-    form {
+    .search-form {
         padding-top: 180px;
         display: flex;
         flex-direction: column;
@@ -168,6 +171,79 @@ main {
                 box-shadow: 0 1px 1px rgba(0,0,0,.1);
                 border: 1px solid #dadce0;
             }
+        }
+    }
+}
+
+.advanced-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 1;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: $display-black;
+    header {
+        width: 100%;
+        h1 {
+            color: $red-header;
+            font-size: 20px;
+            margin: 25px 35px;
+        }
+        .divider {
+            border-bottom: 1px solid $divider-color;
+        }
+    }
+    .advanced-form {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        width: 80%;
+        max-width: 825px;
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .terms {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            input {
+                flex: 1;
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+            }
+            label {
+                width: 180px;
+            }
+        }
+        > input {
+            align-self: end;
+            height: 30px;
+            min-width: 120px;
+            background-color: #4d90fe;
+            border: 1px solid #3079ed;
+            color: #fff;
+            border-radius: 2px;
+            cursor: default;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        > input:hover {
+            border: 1px solid #2f5bb7;
+            background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
         }
     }
 }

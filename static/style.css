@@ -97,7 +97,7 @@ a:hover {
   text-decoration: underline;
 }
 
-main {
+.search-page {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -106,37 +106,37 @@ main {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8705882353);
 }
-main form {
+.search-page .search-form {
   padding-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-main form #logo {
+.search-page .search-form #logo {
   font-weight: 900;
   font-size: 90px;
   font-family: Product Sans, sans-serif;
 }
-main form #logo :nth-child(1) {
+.search-page .search-form #logo :nth-child(1) {
   color: #4285F4;
 }
-main form #logo :nth-child(2) {
+.search-page .search-form #logo :nth-child(2) {
   color: #EA4335;
 }
-main form #logo :nth-child(3) {
+.search-page .search-form #logo :nth-child(3) {
   color: #FBBC05;
 }
-main form #logo :nth-child(4) {
+.search-page .search-form #logo :nth-child(4) {
   color: #4285F4;
 }
-main form #logo :nth-child(5) {
+.search-page .search-form #logo :nth-child(5) {
   color: #34A853;
 }
-main form #logo :nth-child(6) {
+.search-page .search-form #logo :nth-child(6) {
   color: #EA4335;
 }
-main form .search {
+.search-page .search-form .search {
   height: 46px;
   width: 90%;
   max-width: 580px;
@@ -147,27 +147,27 @@ main form .search {
   padding: 15px;
   gap: 10px;
 }
-main form .search svg {
+.search-page .search-form .search svg {
   height: 20px;
   width: 20px;
   color: darkgray;
 }
-main form .search input {
+.search-page .search-form .search input {
   border: none;
   flex: 1;
 }
-main form .search input:focus {
+.search-page .search-form .search input:focus {
   outline: none;
 }
-main form .search:hover {
+.search-page .search-form .search:hover {
   -webkit-box-shadow: 0px 0px 10px 0px lightgrey;
   -moz-box-shadow: 0px 0px 10px 0px lightgrey;
   box-shadow: 0px 0px 10px 0px lightgrey;
 }
-main form .buttons {
+.search-page .search-form .buttons {
   margin-top: 20px;
 }
-main form .buttons input {
+.search-page .search-form .buttons input {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
@@ -181,9 +181,81 @@ main form .buttons input {
   text-align: center;
   cursor: pointer;
 }
-main form .buttons input:hover {
+.search-page .search-form .buttons input:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border: 1px solid #dadce0;
+}
+
+.advanced-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex: 1;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #222222;
+}
+.advanced-page header {
+  width: 100%;
+}
+.advanced-page header h1 {
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 35px;
+}
+.advanced-page header .divider {
+  border-bottom: 1px solid #ebebeb;
+}
+.advanced-page .advanced-form {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 80%;
+  max-width: 825px;
+}
+.advanced-page .advanced-form h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.advanced-page .advanced-form .terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.advanced-page .advanced-form .terms input {
+  flex: 1;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+.advanced-page .advanced-form .terms label {
+  width: 180px;
+}
+.advanced-page .advanced-form > input {
+  align-self: end;
+  height: 30px;
+  min-width: 120px;
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  color: #fff;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+.advanced-page .advanced-form > input:hover {
+  border: 1px solid #2f5bb7;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
 }
 
 footer {
