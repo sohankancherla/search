@@ -42,4 +42,5 @@ Below is a list of the major tools and languages utilized:
 
 ## Acknowledgements
 
+* Search Icon: [heroicons](https://heroicons.com/)
 * Idea: [CS50 Web Dev](https://cs50.harvard.edu/web/2020/)
